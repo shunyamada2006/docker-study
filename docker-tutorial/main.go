@@ -5,6 +5,7 @@ import(
 "time"
 )
 func main(){
+    //dbPassword := os.Getenv("DB_PASS")
     http.HandleFunc("/",func(w http.ResponseWriter,r *http.Request){
     fmt.Printf("[%s]リクエスト受信:\n",time.Now().Format(time.RFC3339))
     fmt.Fprintf(w, "Hello, Docker Update Success")
